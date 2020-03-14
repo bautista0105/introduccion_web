@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Select</title>
+</head>
+
+
+<body>
+    <!--El value es el que envia el formulario-->
+    <!-- El value nulo o vacio nos sirve como un placeholder-->
+
+    <form action="/introduccion_web/guardado.html" method="GET">
+        <fieldset>
+            <legend> Nombre de Formulario </legend>
+            <select name="carros" id="carros" required >
+                <option value="">-- Seleccionar carro --</option> 
+                <option value="1"> Volvo </option>
+                <option value="2"> BMW </option>
+                <option value="3"> Audi </option>
+        
+            </select>
+            <br>
+            <br>
+            <select name="carros2" id="carros2" required>
+                <option value="0">-- Seleccionar carro --</option> 
+                <option value="1"> Volvo </option>
+                <option value="2" selected> BMW </option>
+                <option value="3"> Audi </option>
+        
+            </select>
+            <br>
+            <br>
+
+            <label for="comentarios"> Comentarios: </label>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Ingrese su comentario.."></textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="..:: Guardar ::..">
+
+         </fieldset>
+    </form>
+   
+</body>
+</html>
