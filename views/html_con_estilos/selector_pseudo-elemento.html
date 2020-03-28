@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selector pseudo-elemento </title>
+
+    <style>
+        /*Pintar la primera letra del parrafo en este caso fue rojo*/
+        /*Y se agrego un tamaño de fuente en la primera letra*/
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+        }
+        /*En este ejemplo se pintara la primera linea en azul*/
+        /*Y se pondra en mayusculas la primera linea del parrafo*/
+        p::first-line {
+            color: #0000ff;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <p>Se puede conmbinar dos selectores  de pseudo-elemento  ::first-letter y ::first-line
+        para agregar efectos, Por ejemplo: la primera linea y la primera letra.
+    </p>
+</body>
+</html>
